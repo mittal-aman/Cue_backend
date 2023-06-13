@@ -12,10 +12,12 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@CrossOrigin
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/{deptCode}")
 public class DirectoryController {
@@ -35,6 +37,8 @@ public class DirectoryController {
         List<String> netIds = employees.stream().map(employee -> employee.getNetId()).collect(Collectors.toList());
 
         List<Personnel> personnels = personnelService.findEmployeesInfo(netIds);
+        Collections.sort(personnels, Comparator.comparing(Personnel::getLastName));
+
         Response response = new Response();
         response.setPersonnels(personnels);
         Department deptName = getDeptName(deptCode);
