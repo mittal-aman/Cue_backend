@@ -10,7 +10,7 @@
     </parent>
     <groupId>nyu.tandon</groupId>
     <artifactId>staffdirectory</artifactId>
-    <version>0.0.7git </version>
+    <version>0.0.7</version>
     <name>staffdirectory</name>
     <description>Staff Directory App</description>
     <properties>
