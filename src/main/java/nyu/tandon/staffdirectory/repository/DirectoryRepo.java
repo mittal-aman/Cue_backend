@@ -9,5 +9,5 @@ import java.util.List;
 @Repository
 public interface DirectoryRepo extends JpaRepository<Directory, String> {
     List<Directory> findByEmpTypeCodeIgnoreCaseAndDeptCodeIgnoreCase(String empTypeCode, String deptCode);
-
+    List<Directory> findByDeptCodeIgnoreCaseAndSpecCodeIgnoreCase(String deptCode,String specCode);
 }

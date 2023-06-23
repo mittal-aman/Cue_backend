@@ -9,8 +9,9 @@ import java.util.List;
 @Getter
 @Setter
 @ToString
-public class Response {
+public class AosResponse {
     List<Personnel> personnels;
     String deptName;
+    String description;
 
 }

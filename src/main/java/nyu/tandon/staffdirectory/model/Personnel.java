@@ -29,6 +29,14 @@ public class Personnel implements Serializable {
     private String personalUrl;
     @Column(name = "imageUrl")
     private String imageUrl;
+    @Column(name = "facultyType")
+    private String facultyType;
+    @Column(name = "brooklyn")
+    private String brooklyn;
+    @Column(name = "officeNum")
+    private String officeNum;
+    @Column(name = "title")
+    private String title;
 
 
 }

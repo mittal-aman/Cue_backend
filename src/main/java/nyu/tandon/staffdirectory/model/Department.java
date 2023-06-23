@@ -21,6 +21,8 @@ public class Department implements Serializable {
     private String deptCode;
     @Column(name = "deptName")
     private String deptName;
+    @Column(name = "eventsUrl")
+    private String eventsUrl;
 
 
 }

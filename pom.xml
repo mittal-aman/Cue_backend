@@ -10,7 +10,7 @@
     </parent>
     <groupId>nyu.tandon</groupId>
     <artifactId>staffdirectory</artifactId>
-    <version>0.0.3-SNAPSHOT</version>
+    <version>0.0.7git </version>
     <name>staffdirectory</name>
     <description>Staff Directory App</description>
     <properties>
@@ -24,6 +24,10 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
