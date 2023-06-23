@@ -22,4 +22,8 @@ public class DirectoryService {
         return directoryRepo.findByEmpTypeCodeIgnoreCaseAndDeptCodeIgnoreCase(empTypeCode, deptCode);
     }
 
+    public List<Directory> findEmployees(String deptCode, String specCode) {
+        return directoryRepo.findByDeptCodeIgnoreCaseAndSpecCodeIgnoreCase(deptCode, specCode);
+    }
+
 }

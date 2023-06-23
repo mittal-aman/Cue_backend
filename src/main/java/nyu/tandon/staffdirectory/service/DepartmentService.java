@@ -6,8 +6,6 @@ import nyu.tandon.staffdirectory.repository.DepartmentRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-
 @Service
 public class DepartmentService {
 
@@ -19,6 +17,10 @@ public class DepartmentService {
     }
 
     public Department findDeptName(String deptCode) {
+        return departmentRepo.findByDeptCode(deptCode);
+    }
+
+    public Department findStudentClubUrl(String deptCode) {
         return departmentRepo.findByDeptCode(deptCode);
     }
 
